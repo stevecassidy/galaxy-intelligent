@@ -1,0 +1,18 @@
+<tool id="IA_demo" name="IA Word Frequency" version="0.1.0">
+    <requirements>
+    </requirements>
+    <stdio>
+        <exit_code range="1:" />
+    </stdio>
+
+    <command>java -jar $__tool_directory__/Intelligent_Archive.jar -I "$input1" -T "title" -A "author"</command>
+    <inputs>
+        <param type="data" name="input1" format="" />
+    </inputs>
+    <outputs>
+        <data name="output1" format="data" />
+    </outputs>
+    <help><![CDATA[
+        TODO: Fill in help.
+    ]]></help>
+</tool>
